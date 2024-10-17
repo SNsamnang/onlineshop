@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .bg{
+            width: 100%;
+            background-color: rgba(3,68,124,255);
+            height: 100vh;
+        }
+        .bg-contianner{
+            background-image: url("img/bg.png");
+            background-size: contain;
+            background-position:top; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover;
+            height: 100vh
+            
+        }
+        .containner{
+            width: 100%;
+            height: 100%;
+        }
+        .header{
+            width: 100%;
+            
+        }
+        .logo{
+            padding-top: 20px;
+            height: 80px;
+            width:100% ;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+        img{
+            width: 120PX;
+        }
+        h2{
+            /* font-family:; */
+            padding: 0;
+            padding-bottom: 12PX;
+            text-align: center;
+            color: white;
+        }
+        .main-containner{
+            width: 320px;
+            height: auto;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+        .item{
+            width: 45%;
+        }
+        .item img{
+            width: 100%;
+            border-radius: 10px;
+            border: 1px solid black;
+            box-shadow: 0px 0px 2px white
+
+        }
+        .item img:hover{
+            box-shadow: 0px 0px 15px #fece00;
+        }
+        .containner-social {
+        width: 100%;
+        height: auto;
+        margin: auto;
+
+    }
+
+    .grid-article {
+        width: 60%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    @media screen and (max-width: 768px) {
+        .grid-article {
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .first-containner{
+            padding-top: 60px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 12px;
+    }
+
+    .social {
+        width: 200px;
+        height: auto;
+        background-color: rgba(3,68,124,255);
+        border-radius: 12px;
+        /* box-shadow: 0px 0px 15px blueviolet; */
+        margin: auto;
+        margin-top: 5px;
+        border: 1PX solid white;
+
+    }
+
+    .social:hover {
+        box-shadow: 0px 0px 15px #fece00;
+
+    }
+
+    .pf-social {
+        margin-top: 3px;
+        margin-bottom: 3px;
+        width: 45px;
+        height: 45px;
+        /* border-radius: 50%; */
+        margin-left: 5px;
+
+    }
+
+    .pf-social img {
+        width: 45px;
+        height: 45px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 2px;
+        box-sizing: border-box;
+    }
+
+    .social h3 {
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="bg-contianner">
+            <div class="contannier">
+                <div class="header">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                    <h2>សូមស្វាគមន៍មកកាន់</h2>
+                    <h2>ARENASHOP.</h2>
+                </div>
+                <div class="main-containner">
+                    <div class="item">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="main-containner">
+                    <div class="item">
+                        <img src="img/1.jpg" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/2.jpg" alt="">
+                    </div>
+                </div>
+                <h2 style="font-size: 22px;">ទំនាក់ទំនងជាមួយក្រុមការងារ</h2>
+                <div class="containner-social">
+                    <div class="grid-article">
+                        <div class="social">
+                            <a href="https://web.facebook.com/ArenaShopCambodia/">
+                                <div class="pf-social">
+                                    <img src="img/facebook-f-brands-solid.svg" alt="">
+                                </div>
+                                <h3 style="font-weight: normal;margin-right: 10px;">Facebook</h3>
+                            </a>
+                        </div>
+                        <div style="width: 10px;height: 100%;"></div>
+                        <div class="social">
+                            <a href="https://t.me/HybridxZydess">
+                                <div class="pf-social">
+                                    <img src="img/telegram-brands-solid.svg" alt="">
+                                </div>
+                                <h3 style="font-weight: normal;margin-right: 10px">Telegram</h3>
+                            </a>
+                        </div>
+                        <div style="width: 10px;height: 100%;"></div>
+                        <div class="social">
+                            <a href="https://web.facebook.com/ArenaShopCambodia/">
+                                <div class="pf-social">
+                                    <img src="img/facebook-messenger-brands-solid.svg" alt="">
+                                </div>
+                                <h3 style="font-weight: normal;margin-right: 10px">Messenger</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
