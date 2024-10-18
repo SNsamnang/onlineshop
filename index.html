@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <style>
         *{
             margin: 0;
@@ -11,8 +14,13 @@
         }
         .bg{
             width: 100%;
-            background-color: rgba(3,68,124,255);
             height: 100vh;
+        }
+        .background{
+            background-color: rgba(3,68,124,255);
+        }
+        .background-change{
+            background-color: black;
         }
         .bg-contianner{
             background-image: url("img/bg.png");
@@ -32,7 +40,7 @@
             
         }
         .logo{
-            padding-top: 20px;
+            padding-top: 15px;
             height: 80px;
             width:100% ;
             margin: auto;
@@ -47,9 +55,10 @@
         h2{
             /* font-family:; */
             padding: 0;
-            padding-bottom: 12PX;
+            padding-bottom: 8PX;
             text-align: center;
             color: white;
+            font-family: "Koulen", sans-serif;
         }
         .main-containner{
             width: 300px;
@@ -98,6 +107,12 @@
     @media screen and (min-width: 768px) {
         .first-containner{
             padding-top: 60px;
+        }
+        .main-containner{
+            width: 400px;
+        }
+        .item{
+            width: 45%;
         }
     }
 
@@ -149,11 +164,13 @@
 
     .social h3 {
         color: white;
+        font-family:'Koulen';
+
     }
     </style>
 </head>
 <body>
-    <div class="bg">
+    <div id="bg" class="bg background">
         <div class="bg-contianner">
             <div class="contannier">
                 <div class="header">
@@ -211,7 +228,22 @@
                     </div>
                 </div>
             </div>
+            
         </div>
     </div>
 </body>
+<script>
+    const bg=document.getElementById("bg");
+    function handle() {
+    const checkinghoverpic = bg.classList.contains("background");
+    if (checkinghoverpic) {
+        bg.classList.remove("background");
+        bg.classList.add("background-change");
+    } else {
+        bg.classList.remove("background-change");
+        bg.classList.add("background");
+    }
+    }
+    bg.addEventListener("click", handle);
+</script>
 </html>
