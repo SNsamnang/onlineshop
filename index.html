@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,49 +10,60 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
         }
-        .bg{
+
+        .bg {
             width: 100%;
             height: auto;
         }
-        .background{
-            background-color: rgba(3,68,124,255);
+
+        .background {
+            background-color: rgba(3, 68, 124, 255);
         }
-        .background-change{
+
+        .background-change {
             background-color: black;
         }
-        .bg-contianner{
+
+        .bg-contianner {
             background-image: url("img/bg.png");
-            background-position:top; /* Center the image */
-            background-repeat: no-repeat; /* Do not repeat the image */
+            background-position: top;
+            /* Center the image */
+            background-repeat: no-repeat;
+            /* Do not repeat the image */
             background-size: cover;
             height: auto;
         }
-        .containner{
+
+        .containner {
             width: 100%;
             height: 80vh;
         }
-        .header{
+
+        .header {
             width: 100%;
-            
+
         }
-        .logo{
+
+        .logo {
             padding-top: 15px;
             height: 80px;
-            width:100% ;
+            width: 100%;
             margin: auto;
             display: flex;
             align-items: center;
             justify-content: center;
 
         }
-        img{
+
+        img {
             width: 120PX;
         }
-        h2{
+
+        h2 {
             /* font-family:; */
             padding: 0;
             padding-bottom: 8PX;
@@ -59,7 +71,16 @@
             color: white;
             font-family: "Koulen", sans-serif;
         }
-        .main-containner{
+
+        .text-shadow {
+            text-shadow: 2px 5px #1b1717;
+        }
+
+        .text-shadow-change {
+            text-shadow: 2px 5px rgba(3, 68, 124, 255);
+        }
+
+        .main-containner {
             width: 300px;
             height: auto;
             margin: auto;
@@ -68,111 +89,120 @@
             justify-content: space-around;
             margin-bottom: 10px;
         }
-        .item{
+
+        .item {
             width: 40%;
         }
-        .item img{
+
+        .item img {
             width: 100%;
             border-radius: 10px;
             border: 1px solid black;
-            box-shadow: 0px 0px 2px white
-
+            box-shadow: 0px 0px 5px white;
+            transition: all 0.5s;
         }
-        .item img:hover{
+
+        .item img:hover {
             box-shadow: 0px 0px 15px #fece00;
         }
+
         .containner-social {
-        width: 100%;
-        height: auto;
-        margin: auto;
-    }
+            width: 100%;
+            height: auto;
+            margin: auto;
+        }
 
-    .grid-article {
-        width: 60%;
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-
-    }
-
-    @media screen and (max-width: 768px) {
         .grid-article {
-            flex-direction: column;
+            width: 60%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
         }
-        .padding-1{
-            height: 5vh;
+
+        @media screen and (max-width: 768px) {
+            .grid-article {
+                flex-direction: column;
+            }
+
+            .padding-1 {
+                height: 5vh;
+            }
         }
-    }
 
-    @media screen and (min-width: 768px) {
-        .first-containner{
-            padding-top: 60px;
+        @media screen and (min-width: 768px) {
+            .first-containner {
+                padding-top: 60px;
+            }
+
+            .main-containner {
+                width: 420px;
+            }
+
+            .item {
+                width: 45%;
+            }
+
+            .padding {
+                height: 5vh;
+            }
         }
-        .main-containner{
-            width: 420px;
+
+        a {
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 12px;
         }
-        .item{
-            width: 45%;
+
+        .social {
+            width: 200px;
+            height: auto;
+            background-color: rgba(3, 68, 124, 255);
+            border-radius: 12px;
+            /* box-shadow: 0px 0px 15px blueviolet; */
+            margin: auto;
+            margin-top: 5px;
+            border: 1PX solid white;
+
         }
-        .padding{
-            height: 5vh;
+
+        .social:hover {
+            box-shadow: 0px 0px 15px #fece00;
+
         }
-    }
 
-    a {
-        text-decoration: none;
-        height: 100%;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        border-radius: 12px;
-    }
+        .pf-social {
+            margin-top: 3px;
+            margin-bottom: 3px;
+            width: 45px;
+            height: 45px;
+            /* border-radius: 50%; */
+            margin-left: 5px;
 
-    .social {
-        width: 200px;
-        height: auto;
-        background-color: rgba(3,68,124,255);
-        border-radius: 12px;
-        /* box-shadow: 0px 0px 15px blueviolet; */
-        margin: auto;
-        margin-top: 5px;
-        border: 1PX solid white;
+        }
 
-    }
+        .pf-social img {
+            width: 45px;
+            height: 45px;
+            background-color: white;
+            border-radius: 50%;
+            padding: 2px;
+            box-sizing: border-box;
+        }
 
-    .social:hover {
-        box-shadow: 0px 0px 15px #fece00;
+        .social h3 {
+            color: white;
+            font-family: 'Koulen';
 
-    }
-
-    .pf-social {
-        margin-top: 3px;
-        margin-bottom: 3px;
-        width: 45px;
-        height: 45px;
-        /* border-radius: 50%; */
-        margin-left: 5px;
-
-    }
-
-    .pf-social img {
-        width: 45px;
-        height: 45px;
-        background-color: white;
-        border-radius: 50%;
-        padding: 2px;
-        box-sizing: border-box;
-    }
-
-    .social h3 {
-        color: white;
-        font-family:'Koulen';
-
-    }
+        }
     </style>
 </head>
+
 <body>
     <div id="bg" class="bg background">
         <div class="bg-contianner">
@@ -181,8 +211,12 @@
                     <div class="logo">
                         <img src="img/logo.png" alt="">
                     </div>
-                    <h2>សូមស្វាគមន៍មកកាន់</h2>
-                    <h2>ARENASHOP.</h2>
+                    <div style="width: 100%;display: flex;align-items: center;justify-content: center;">
+                        <h2 class="h2 text-shadow">សូមស្វាគមន៍មកកាន់</h2>
+                    </div>
+                    <div style="width: 100%;display: flex;align-items: center;justify-content: center;">
+                        <h2 class="h2 text-shadow">ARENASHOP.</h2>
+                    </div>
                 </div>
                 <div class="main-containner">
                     <div class="item">
@@ -201,7 +235,10 @@
                     </div>
                 </div>
                 <div class="padding"></div>
-                <h2 style="font-size: 22px;padding: 0;">ទំនាក់ទំនងជាមួយក្រុមការងារ</h2>
+                <div style="width: 100%;display: flex;align-items: center;justify-content: center;">
+                    <h2 class="h2 text-shadow" style="font-size: 22px;padding: 0;">ទំនាក់ទំនងជាមួយក្រុមការងារ
+                    </h2>
+                </div>
             </div>
             <div class="containner-social">
                 <div class="grid-article">
@@ -235,22 +272,38 @@
                 <div class="padding"></div>
                 <div class="padding-1"></div>
             </div>
-            
+
         </div>
     </div>
 </body>
 <script>
-    const bg=document.getElementById("bg");
-    function handle() {
-    const checkinghoverpic = bg.classList.contains("background");
-    if (checkinghoverpic) {
-        bg.classList.remove("background");
-        bg.classList.add("background-change");
-    } else {
-        bg.classList.remove("background-change");
-        bg.classList.add("background");
-    }
-    }
-    bg.addEventListener("click", handle);
+    const bg = document.getElementById("bg");
+    const h2 = document.querySelectorAll(".h2");
+    bg.addEventListener("click", () => {
+        const checkinghoverpic = bg.classList.contains("background");
+        if (checkinghoverpic) {
+            bg.classList.remove("background");
+            bg.classList.add("background-change");
+
+        } else {
+            bg.classList.remove("background-change");
+            bg.classList.add("background");
+
+        }
+        h2.forEach(h2 => {
+            const checkh2 = h2.classList.contains("text-shadow");
+            if (checkh2) {
+                h2.classList.remove("text-shadow");
+                h2.classList.add("text-shadow-change");
+            }
+            else {
+                h2.classList.remove("text-shadow-change");
+                h2.classList.add("text-shadow");
+    
+            }
+        })
+    });
+
 </script>
+
 </html>
